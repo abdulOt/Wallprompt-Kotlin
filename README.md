@@ -93,34 +93,6 @@ app/
 
 ---
 
-# Installation
-
-1. Clone the repository
-
-```bash
-git clone https://github.com/yourusername/wallprompt.git
-```
-
-2. Open in Android Studio.
-
-3. Add your Firebase configuration:
-
-```
-google-services.json
-```
-
-4. Configure:
-
-- Firebase Authentication
-- Firestore
-- Storage
-- Cloud Functions
-- AdMob
-
-5. Build and Run.
-
----
-
 # Requirements
 
 - Android Studio
