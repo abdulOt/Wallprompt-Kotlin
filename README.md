@@ -169,7 +169,7 @@ This project is licensed under the MIT License.
 
 Software Engineer | Android Developer | Game Developer
 
-GitHub:[
+GitHub:
 https://github.com/abdulOt?tab=repositories
 
 LinkedIn:
