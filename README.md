@@ -47,16 +47,6 @@ WallPrompt is a modern Android wallpaper application built with Kotlin that allo
 
 ---
 
-# Screenshots
-
-> Screenshots coming soon.
-
-| Home | Categories | AI Generate | Profile |
-|------|------------|------------|---------|
-| Add Screenshot | Add Screenshot | Add Screenshot | Add Screenshot |
-
----
-
 # Tech Stack
 
 ## Language
