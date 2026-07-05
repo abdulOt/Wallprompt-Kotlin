@@ -169,14 +169,14 @@ This project is licensed under the MIT License.
 
 Software Engineer | Android Developer | Game Developer
 
-GitHub:
-https://github.com/yourusername
+GitHub:[
+https://github.com/dashboard
 
 LinkedIn:
-https://linkedin.com/in/yourprofile
+https://www.linkedin.com/in/abdul-hanan-770875246/
 
 Portfolio:
-https://yourportfolio.com
+https://portfolio-35d8e.web.app/
 
 ---
 
