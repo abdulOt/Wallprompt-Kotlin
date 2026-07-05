@@ -1,0 +1,27 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="end"
+    android:layout_marginTop="24dp">
+
+    <TextView
+        android:id="@+id/dialogCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:textColor="#1A1110"
+        android:textSize="16sp"
+        android:padding="12dp" />
+
+    <TextView
+        android:id="@+id/dialogSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:textColor="#1A1110"
+        android:textSize="16sp"
+        android:padding="12dp" />
+
+</LinearLayout>

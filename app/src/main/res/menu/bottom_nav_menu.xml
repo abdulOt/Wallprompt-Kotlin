@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/home"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/categoriesFragment"
+        android:icon="@drawable/category"
+        android:title="@string/categories" />
+
+    <item
+        android:id="@+id/doubleWallpaperFragment"
+        android:icon="@drawable/doublewallpaper"
+        android:title="@string/doubleWallpaper" />
+
+    <item
+        android:id="@+id/generateFragment"
+        android:icon="@drawable/generate"
+        android:title="@string/generate" />
+
+</menu>

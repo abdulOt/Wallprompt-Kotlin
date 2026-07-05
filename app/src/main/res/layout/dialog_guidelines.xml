@@ -1,0 +1,28 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical" android:padding="16dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/community_guidelines" android:textSize="18sp" android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/no_sexual_content_especially_involving_minors_n_no_hate_or_harassment_n_no_explicit_violence_or_gore_n_no_child_exploitation_endangerment_or_sexualization_n_no_illegal_or_ip_infringing_content_n_nby_proceeding_you_agree_to_follow_these_rules"/>
+
+        <CheckBox
+            android:id="@+id/cbAgree"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/i_agree"/>
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="@string/continue_1" />
+    </LinearLayout>
+</ScrollView>

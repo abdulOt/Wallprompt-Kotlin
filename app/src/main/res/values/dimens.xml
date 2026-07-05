@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_nav_height">64dp</dimen>
+    <dimen name="bottom_nav_margin">16dp</dimen>
+    <dimen name="bottom_nav_bottom_margin">24dp</dimen>
+    <dimen name="bottom_nav_icon_size">28dp</dimen>
+    <dimen name="double_card_width">250dp</dimen>
+    <dimen name="double_card_height">400dp</dimen>
+</resources>

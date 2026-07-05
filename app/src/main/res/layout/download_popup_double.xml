@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/optionDownloadBoth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/download_both_wallpapers"
+        android:textSize="16sp"
+        android:textColor="#1A1110"
+        android:paddingVertical="14dp"
+        android:paddingHorizontal="20dp"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical" />
+
+</LinearLayout>

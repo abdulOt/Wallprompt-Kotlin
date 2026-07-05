@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleReport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/report_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="?android:attr/textColorPrimary" />
+
+    <!-- Reason -->
+    <TextView
+        android:id="@+id/labelReason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reason"
+        android:layout_marginTop="12dp"
+        android:textColor="?android:attr/textColorPrimary" />
+
+    <Spinner
+        android:id="@+id/reasonSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:spinnerMode="dropdown" />
+
+    <!-- Notes -->
+    <TextView
+        android:id="@+id/labelNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/details_optional"
+        android:layout_marginTop="12dp"
+        android:textColor="?android:attr/textColorPrimary" />
+
+    <EditText
+        android:id="@+id/notesEt"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="top|start"
+        android:hint="@string/optional_details_what_s_wrong"
+        android:inputType="textMultiLine|textCapSentences"
+        android:maxLength="300"
+        android:padding="12dp"
+        android:background="@android:color/transparent"
+        android:textColor="?android:attr/textColorPrimary"
+        android:layout_marginTop="4dp" />
+
+    <!-- Warning -->
+    <TextView
+        android:id="@+id/warnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/report_delete_warning"
+        android:textSize="12sp"
+        android:layout_marginTop="8dp"
+        android:textColor="?android:attr/textColorSecondary" />
+
+    <!-- Actions -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:id="@+id/btnCancel"
+            android:text="@string/cancel"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:minHeight="48dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:textColor="?android:attr/textColorPrimary" />
+
+        <TextView
+            android:id="@+id/btnSubmitDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit_amp_delete"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:minHeight="48dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark" />
+    </LinearLayout>
+</LinearLayout>

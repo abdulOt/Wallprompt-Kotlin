@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="8dp"
+    android:background="@drawable/rounded_card_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/legalTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/legal_info"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:id="@+id/legalPrivacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/privacy_policy"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:paddingVertical="8dp" />
+
+        <TextView
+            android:id="@+id/legalEula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/eula"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:paddingVertical="8dp" />
+
+        <TextView
+            android:id="@+id/termsOfService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/terms_of_service"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:paddingVertical="8dp" />
+
+        <TextView
+            android:id="@+id/aiPolicy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ai_generation_policy"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:paddingVertical="8dp" />
+
+        <TextView
+            android:id="@+id/legalVersion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_version"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:paddingVertical="8dp" />
+
+        <TextView
+            android:id="@+id/legalRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rate_us"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:paddingVertical="8dp" />
+
+        <TextView
+            android:id="@+id/legalContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_us"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:paddingVertical="8dp" />
+
+        <TextView
+            android:id="@+id/dialogCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_gravity="end"
+            android:paddingTop="20dp" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,35 @@
+# Android
+.idea/
+.gradle/
+build/
+*/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Local
+local.properties
+
+# Secrets
+.env
+.env.*
+google-services.json
+serviceAccountKey.json
+*.jks
+*.keystore
+keystore.properties
+
+# Firebase
+firebase-debug.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Firebase
+app/google-services.json
+
+Requirements/
+app/release/
+*.aab
+*.apk

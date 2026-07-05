@@ -1,0 +1,59 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Lock Image (starts on top) -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/lockCard"
+        android:layout_width="@dimen/double_card_width"
+        android:layout_height="@dimen/double_card_height"
+        android:layout_gravity="top|start"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:id="@+id/lockscreenImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/lock_screen_image"
+            android:background="@drawable/rounded_card_background" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <!-- Home Image (starts behind) -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/homeCard"
+        android:layout_width="@dimen/double_card_width"
+        android:layout_height="@dimen/double_card_height"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:id="@+id/homescreenImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/home_screen_image"
+            android:background="@drawable/rounded_card_background" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Lock Icon -->
+    <ImageView
+        android:id="@+id/lockIcon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="10dp"
+        android:src="@drawable/lock_icon"
+        android:contentDescription="@string/double_rewarded_lock"
+        android:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/bg_images"
+        android:scaleType="centerCrop"
+        android:contentDescription="@null"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <!-- Soft scrim (NOT a box) just to calm the area behind text -->
+
+    <!-- Content guideline to keep things centered nicely -->
+
+    <ImageView
+        android:id="@+id/imageAIGeneration"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="116dp"
+        android:contentDescription="@string/ai_generator"
+        android:src="@drawable/on_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/scrim"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/onboarding_soft_scrim"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.31" />
+
+    <TextView
+        android:id="@+id/textTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/poppins_bold"
+        android:includeFontPadding="false"
+        android:letterSpacing="-0.02"
+        android:text="@string/explore_wallpapers"
+        android:textColor="#243041"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guidelineCenter" />
+
+    <TextView
+        android:id="@+id/textSubtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:alpha="0.8"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="6dp"
+        android:maxWidth="290dp"
+        android:text="@string/free_and_rewarded_wallpapers_4k_combos_smart_categories_and_the_magic_of_ai_wallpaper_generation_all_in_one_place"
+        android:textColor="#1B1B1B"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textTitle2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

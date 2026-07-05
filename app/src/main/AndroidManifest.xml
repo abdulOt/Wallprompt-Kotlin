@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Internet permission -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:theme="@style/Theme.WallPrompt"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        tools:targetApi="35">
+
+        <!-- AdMob App ID -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6671922652988055~3905531895" />
+
+        <meta-data
+            android:name="unityads-game-id"
+            android:value="5908136" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+            android:screenOrientation="portrait"
+            tools:ignore="ChromeOsOrientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FullscreenActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="ChromeOsOrientation" />
+        <activity android:name=".CategoryImagesActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="ChromeOsOrientation"/>
+        <activity android:name=".ProfileActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="ChromeOsOrientation"/>
+        <activity android:name=".PremiumActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="ChromeOsOrientation"/>
+        <activity android:name=".OnboardingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="ChromeOsOrientation"/>
+        <activity android:name=".GenerationPolicyActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="ChromeOsOrientation"/>
+
+    </application>
+
+</manifest>

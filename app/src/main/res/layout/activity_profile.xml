@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aandroid="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+
+    <!-- AppBarLayout -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:contentScrim="@android:color/transparent"
+            app:titleEnabled="false">
+
+            <!-- The scrollable content inside the collapsing header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="24dp">
+
+                <ImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/email_placeholder"
+                    android:scaleType="centerCrop"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/email_placeholder"
+                    app:layout_collapseMode="parallax" />
+
+                <TextView
+                    android:id="@+id/userEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email_user_example_com"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/bottom_nav_dark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ai_generated_images"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/teal_700" />
+            </LinearLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- RecyclerView (MUST come after AppBarLayout for scrolling coordination) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/generatedImagesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:scrollbars="vertical"
+        aandroid:clipToPadding="false" />
+
+    <ImageView
+        android:id="@+id/emptyPlaceholder"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:visibility="gone"
+        android:contentDescription="@string/no_generated_images"
+        android:src="@drawable/placeholder_generate" />
+
+    <TextView
+        android:id="@+id/emptyMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="250dp"
+        android:text="@string/generate_images_to_see_them_here"
+        android:textColor="@color/bottom_nav_dark"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_medium"
+        android:visibility="gone" />
+
+    <!-- Floating Logout Button -->
+    <ImageButton
+        android:id="@+id/logoutButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/logout"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/log_out"
+        android:scaleType="centerCrop"
+        android:layout_margin="16dp"
+        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+        android:layout_gravity="bottom|center_horizontal" />
+
+    <!-- Back arrow (always visible in top-right) -->
+    <ImageView
+        android:id="@+id/backIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:layout_gravity="top|end"
+        android:src="@drawable/back_arrow"
+        android:contentDescription="@string/back_arrow" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:text="@string/aspect_ratio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#1A1110"
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id="@+id/spinnerAspectRatio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="@string/image_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#1A1110"
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id="@+id/spinnerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/resolution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#1A1110"
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id="@+id/spinnerResolution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/note_2_generations_in_24_hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#6B2111"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <include layout="@layout/dialog_buttons_image_generation" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

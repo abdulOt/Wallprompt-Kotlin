@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base Cool White Gradient -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="270"
+                android:startColor="#FFFDF8"
+                android:centerColor="#F6F1E8"
+                android:endColor="#ECE6DC" />
+        </shape>
+    </item>
+
+    <!-- Soft Gloss Highlight (top-center) -->
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="700dp"
+                android:centerX="0.5"
+                android:centerY="0.60"
+                android:startColor="#66FFFFFF"
+                android:endColor="#00FFFFFF" />
+        </shape>
+    </item>
+
+</layer-list>

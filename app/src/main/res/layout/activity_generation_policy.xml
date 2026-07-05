@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/policy_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ai_image_generation_policy"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#111111"
+            android:paddingBottom="12dp" />
+
+        <!-- Introduction -->
+        <TextView
+            android:id="@+id/tvIntro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/to_keep_wallprompt_safe_and_compliant_with_google_play_policies_your_prompts_and_generated_images_must_follow_these_rules"
+            android:textSize="15sp"
+            android:textColor="#444444"
+            android:lineSpacingExtra="3dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Rules Header -->
+        <TextView
+            android:id="@+id/tvRulesHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/what_s_not_allowed"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#111111"
+            android:paddingBottom="8dp" />
+
+        <!-- Rules -->
+        <TextView
+            android:id="@+id/tvRules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#444444"
+            android:textSize="14sp"
+            android:lineSpacingExtra="6dp"
+            android:text="@string/sexual_content_nudity_or_erotic_imagery_n_any_sexual_content_involving_minors_words_like_sex_sexual_nude_pornography_child_minor_underage_incest_rape_and_similar_are_blocked_n_harassment_hate_speech_or_discrimination_against_protected_groups_n_graphic_violence_self_harm_or_instructions_to_cause_harm_n_illegal_activities_weapons_drugs_human_exploitation_or_dangerous_content_n_faces_or_identities_of_real_people_without_consent_deepfakes_or_public_figures_in_sensitive_contexts_n_copyright_infringement_or_misuse_of_trademarks_logos"
+            android:paddingBottom="16dp" />
+
+        <!-- Moderation -->
+        <TextView
+            android:id="@+id/tvModeration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#444444"
+            android:textSize="14sp"
+            android:lineSpacingExtra="6dp"
+            android:text="@string/moderation_amp_blocking_n_prompts_are_automatically_checked_and_may_be_blocked_with_a_short_explanation_n_repeated_attempts_to_bypass_filters_may_limit_access_to_generation"
+            android:paddingBottom="16dp" />
+
+        <!-- Reporting -->
+        <TextView
+            android:id="@+id/tvReporting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#444444"
+            android:textSize="14sp"
+            android:lineSpacingExtra="6dp"
+            android:text="@string/reporting_amp_removal_n_a_flag_icon_appears_on_top_of_every_generated_image_tap_it_to_report_and_request_deletion_n_the_same_flag_is_available_in_your_generated_images_history_n_reported_items_are_reviewed_and_removed_repeat_abuse_can_lead_to_restrictions"
+            android:paddingBottom="16dp" />
+
+        <!-- Data -->
+        <TextView
+            android:id="@+id/tvData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#444444"
+            android:textSize="14sp"
+            android:lineSpacingExtra="6dp"
+            android:text="@string/data_amp_privacy_n_we_may_keep_minimal_logs_prompt_text_timestamps_and_report_metadata_to_enforce_these_rules_and_comply_with_policies_n_see_our_privacy_policy_for_details"
+            android:paddingBottom="20dp" />
+
+        <!-- Checkbox -->
+        <CheckBox
+            android:id="@+id/cbAgree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/i_understand_and_agree_to_the_image_generation_policy"
+            android:textColor="#111111"
+            android:textSize="14sp"
+            android:paddingBottom="16dp" />
+
+        <!-- Continue Button -->
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:backgroundTint="#3F51B5"
+            android:text="@string/continues"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:enabled="false" />
+
+        <!-- Learn More -->
+        <TextView
+            android:id="@+id/tvLearnMore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/learn_more_in_our_ai_content_policy_and_privacy_policy"
+            android:textSize="13sp"
+            android:textColor="#3F51B5"
+            android:paddingTop="16dp"
+            android:lineSpacingExtra="2dp" />
+
+    </LinearLayout>
+</ScrollView>
