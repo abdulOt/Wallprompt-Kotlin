@@ -1,6 +1,6 @@
 # WallPrompt 📱🎨
 
-WallPrompt is a modern Android wallpaper application built with Kotlin that allows users to browse, generate, and download high-quality wallpapers. The app combines curated collections with AI-powered wallpaper generation to provide users with unique and personalized wallpapers.
+Android wallpaper application built with Kotlin that allows users to browse, generate, and download high-quality wallpapers. The app combines curated collections with AI-powered wallpaper generation to provide users with unique and personalized wallpapers.
 
 > Developed by Abdul Hanan
 
@@ -77,22 +77,6 @@ WallPrompt is a modern Android wallpaper application built with Kotlin that allo
 
 ---
 
-# Project Structure
-
-```
-app/
-├── activities/
-├── adapters/
-├── fragments/
-├── models/
-├── services/
-├── utils/
-├── firebase/
-└── resources/
-```
-
----
-
 # Requirements
 
 - Android Studio
@@ -103,57 +87,9 @@ app/
 
 ---
 
-# Future Improvements
-
-- Favorites
-- Dark Mode
-- Offline Caching
-- Search
-- Wallpaper Collections
-- Live Wallpapers
-- Premium Subscription
-- More AI Styles
-
----
-
-# Security
-
-Sensitive files such as:
-
-- API Keys
-- google-services.json
-- Signing Keys
-- Local configuration
-
-are excluded from this repository.
-
----
-
-# License
-
-This project is licensed under the MIT License.
-
----
-
-# Author
-
-**Abdul Hanan**
-
-Software Engineer | Android Developer | Game Developer
-
-GitHub:
-https://github.com/abdulOt?tab=repositories
-
 LinkedIn:
 https://www.linkedin.com/in/abdul-hanan-770875246/
 
 Portfolio:
 https://portfolio-35d8e.web.app/
 
----
-
-## ⭐ Support
-
-If you like this project, consider giving it a ⭐ on GitHub!
-
-It helps others discover the project and supports future development.
